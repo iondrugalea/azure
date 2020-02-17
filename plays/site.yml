@@ -1,5 +1,1 @@
----
-  hosts: localhost
-  connection: local
-  roles:
-    - roles/azure_vm
+- import_playbook: azure_vm.yml
