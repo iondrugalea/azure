@@ -1,8 +1,8 @@
 ---
 - name: Add the user 'idrugalea' 
-  user:
-    name: idrugalea
-    comment: idrugalea
+  azure_rm_virtualmachine:
+    ad_user: idrugalea
+
 
 - name: Add ssh keys
   authorized_key:
