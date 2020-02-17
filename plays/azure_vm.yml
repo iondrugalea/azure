@@ -1,4 +1,4 @@
 ---
-hosts: local
-roles:
-  - roles/azure_vm
+- hosts: local
+  roles:
+   - roles/azure_vm
