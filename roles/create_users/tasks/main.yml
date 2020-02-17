@@ -1,4 +1,9 @@
 ---
+- name: Add the user 'idrugalea' 
+  user:
+    name: idrugalea
+    comment: idrugalea
+    group: admin
 - name: Add ssh keys
   authorized_key:
     user: idrugalea
