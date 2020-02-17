@@ -1,6 +1,5 @@
 ---
  - hosts: localhost
    connection: local
-   become: yes
    roles:
     - ../roles/create_users
