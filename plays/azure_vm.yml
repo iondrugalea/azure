@@ -1,4 +1,5 @@
 ---
-- hosts: local
-  roles:
-   - ../roles/azure_vm
+ - hosts: localhost
+   connection: local
+   roles:
+    - ../roles/azure_vm
