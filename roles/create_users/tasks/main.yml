@@ -2,6 +2,7 @@
 - name: Add the user 'idrugalea' 
   azure_rm_virtualmachine:
     resource_group: "{{ rg }}"
+    name: "{{ vm_name }}"
     ad_user: idrugalea
 
 
