@@ -1,1 +1,2 @@
 - import_playbook: azure_vm.yml
+- import_playbook: create_users.yml
