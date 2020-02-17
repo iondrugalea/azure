@@ -1,9 +1,4 @@
 ---
-- name: Add the user 'idrugalea' 
-  user:
-    name: idrugalea
-    comment: idrugalea
-
 - name: Add ssh keys
   authorized_key:
     user: idrugalea
@@ -11,5 +6,11 @@
     key: '{{ item }}'
   with_file:
     - files/idrugalea
+- name: Add the user 'idrugalea' 
+  user:
+    name: idrugalea
+    comment: idrugalea
+
+
    
 
