@@ -1,8 +1,10 @@
 ---
- - name: Deploy SSH-Keys to remote host
-    authorized_key:
-      user: idrugalea
-      key: "{{ keystodeploy|map(attribute='sshkey')|join('\n') }}"
-      exclusive: true
+- name: Add ssh keys
+  authorized_key:
+    user: idrugalea
+    state: present
+    key: '{{ item }}'
+  with_file:
+    - files/idrugalea
    
 
