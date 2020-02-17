@@ -1,1 +1,28 @@
 ---
+---
+# defaults file for azure_vm
+admin_username: ion
+
+rg_location: eastus
+
+pd_nic: PDestrianNetworkInterfaceCard
+
+rg: PDestrian
+
+vnet_name: PDestrian_vnet
+
+subnet_name: PDestrian_subnet
+
+vnet_address_space: 10.0.0.0/16
+
+subnet_address_space: 10.0.1.0/24
+
+pub_ip: public_ip
+
+pd_sec_group: PDestrian_Sec_Group
+
+vm_name: PDestrianTestServer
+
+azure_test_server: Standard_DS1_v2
+
+key_data: 
